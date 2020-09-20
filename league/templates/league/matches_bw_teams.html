@@ -1,0 +1,10 @@
+
+
+<h1>Matches between {{ team1 }} and {{ team2 }}</h1>
+
+{% for match in matches %}
+
+    <h3>{{ match.season }}: <a href="{% url 'match_details' match.season match.match_no %}">{{ match.home_team }} v {{ match.away_team }}</a></h3>
+
+{% endfor %}
+

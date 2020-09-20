@@ -1,0 +1,9 @@
+
+
+{% for match in match %}
+
+    <h1>{{ match.home_team }} v {{ match.away_team }}</h1>
+    <h3>{{ match.season }}</h3>
+    <h4> Score: {{ match.home_team_ft_goals }} - {{ match.away_team_ft_goals }}</h4>
+
+{% endfor %}
